@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="shortcut icon" href="./Assets/img/4813807.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head><link rel="stylesheet" href="./Assets/style/estilo.css">
+<body>
+    <div class="container">
+                <section class="calculadora">
+            <form class="form">
+                    <h1 class="title">Calculadora - IMC</h1>
+                    <div class="input_Box">
+                        <label for="peso">Peso</label>
+                        <div class="input_Icon">
+                            <i class="fa-solid fa-weight-scale"></i>
+                            <input type="number" id="peso" required placeholder="exemplo: 50">
+                            <span>KG</span>
+                        </div>
+                    </div>
+                    <div class="input_Box">
+                        <label for="altura">Altura</label>
+                        <div class="input_Icon">
+                            <i class="fa-solid fa-ruler-vertical"></i>
+                            <input type="text" id="altura" placeholder="exemplo: 1.60">
+                            <span>M</span>
+                        </div>
+                    </div>
+                    <button>Calcular</button>
+                    <div class="info">
+                        <div class="resultado">
+                            <div class="imc">
+                                <span class="valor"></span>
+                                <span>Seu IMC</span>
+                            </div>
+                            <div class="describe">
+                                <span class="texto"></span>
+                            </div>
+                        </div>
+                        <div class="moreinfo">
+                            <a href="https://brasilescola.uol.com.br/educacao-fisica/Indice-massa-corporal-imc.htm" target="_blank">
+                                 Mais informações sobre o IMC
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div><br>
+                        <button class="reset" onclick="limparDados()">Limpar</button>
+                    </div>
+
+            </form>
+        </section>
+
+    </div>
+    <script src="./Assets/js/script.js"></script>
+</body>
+</html>
